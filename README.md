@@ -1,30 +1,31 @@
-# Search_Engine
+# Search Engine using Trie Data Structure
 
-Language: C++
+## Overview
 
-Implement data sturcture: Trie
+This project implements a search engine using the Trie data structure in C++. The search engine provides various functionalities to efficiently search for strings based on different criteria such as suffixes, wildcards, full matches, and prefixes.
 
-Goal:
+## Features
 
-Develop a data structure that can serve as a efficient search engine, which contains the following functions that allows users to search a specific word according to requirements :
-1. Suffix Search: Search for strings with specific suffixes. (String ending with certain characters)
-2. Wildcard Search: Implemented wildcard search functionality, which permits the use of placeholders in search queries for flexible data retrieval.
-3. Full Search: Search for strings with exact matches.
-4. Prefix Search: Search for strings with specific prefixes. (String starting with certain characters)
+1. **Suffix Search**: Allows users to search for strings with specific suffixes, i.e., strings ending with certain characters.
+2. **Wildcard Search**: Implements wildcard search functionality, enabling the use of placeholders in search queries for flexible data retrieval.
+3. **Full Search**: Facilitates searching for strings with exact matches.
+4. **Prefix Search**: Enables users to search for strings with specific prefixes, i.e., strings starting with certain characters.
 
+## Input and Output
 
-Input file:
+### Input Files
 
-1. query.txt
-2. query_more.txt
+1. `query.txt` or `query_more.txt`: Files containing search queries to be performed on the dataset.
+2. Dataset folder: Contains multiple files (`data/` or `data_more/`) serving as the dataset for search operations.
 
-Dataset (data.zip):
+### Output
 
-1. data (100 files)
-2. data_more (1000 files)
+The search results will be saved to an output file specified during execution.
 
-command:
+## Compilation
 
+Compile the program using the following command:
+
+```bash
 g++ -std=c++17 filename.cpp -o filename
-.\filename [input_folder_path] [query_file_path] [output_file_name]
-For example: .\filename data query.txt output.txt
+./filename [input_folder_path] [query_file_path] [output_file_name]  ( ./filename data query.txt output.txt)
